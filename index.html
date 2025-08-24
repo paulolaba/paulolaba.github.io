@@ -1,156 +1,173 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Paulo Laba — Homepage</title>
-  <meta name="description" content="Homepage de Paulo Laba — Engenheiro Ambiental (UFPR). Pesquisa em micrometeorologia e turbulência na Amazônia; interesse em HPC, Chapel e Python." />
+  <link rel="shortcut icon" type="image/png" href="pl-icon.png">
+  <link rel="icon" type="image/png" href="pl-icon.png">
+  <title>Laba, P.H.</title>
+  <meta name="description" content="Homepage of Paulo Laba — Environmental Engineer (UFPR). Research in micrometeorology and turbulence in the Amazon; interest in HPC, Chapel, and Python." />
   <meta property="og:title" content="Paulo Laba — Homepage" />
-  <meta property="og:description" content="Pesquisa em micrometeorologia e turbulência; HPC; Chapel & Python." />
+  <meta property="og:description" content="Research in micrometeorology and turbulence; HPC; Chapel & Python." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://seu-usuario.github.io" />
   <meta name="theme-color" content="#0ea5e9" />
-  <style>
-    :root{
-      --bg: #0b0c0f; /* fundo escuro agradável */
-      --card: #111418;
-      --text: #e6ebf2;
-      --muted: #9aa4b2;
-      --brand: #0ea5e9; /* azul "sky" */
-      --ok: #22c55e;
-      --warn: #f59e0b;
-      --radius: 18px;
-      --shadow: 0 10px 30px rgba(0,0,0,.25);
-    }
-    @media (prefers-color-scheme: light){
-      :root{ --bg:#f7f8fb; --card:#ffffff; --text:#0b1020; --muted:#51607a; }
-    }
-    *{ box-sizing:border-box }
-    html,body{ height:100% }
-    body{
-      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 10% -10%, rgba(14,165,233,.15), transparent 60%),
-                  radial-gradient(900px 500px at 110% 10%, rgba(34,197,94,.12), transparent 60%),
-                  var(--bg);
-      color:var(--text);
-    }
-    a{ color:var(--brand); text-decoration:none }
-    a:hover{ text-decoration:underline }
-    .wrap{ max-width: 980px; margin:0 auto; padding: 28px; }
-    header{
-      display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom: 28px;
-    }
-    .brand{ font-weight:700; letter-spacing:.3px; }
-    nav a{ margin-left:16px; font-weight:600; color:var(--muted) }
-    nav a:hover{ color:var(--text) }
-    .card{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); }
-    .hero{ padding: 36px; display:grid; grid-template-columns: 1fr; gap:20px; align-items:center; }
-    .hero h1{ font-size: clamp(28px, 6vw, 44px); margin:0 0 8px 0; line-height:1.15 }
-    .hero p.lead{ font-size: clamp(16px, 2.3vw, 20px); color:var(--muted); margin: 0 0 14px 0 }
-    .badges{ display:flex; flex-wrap:wrap; gap:8px; }
-    .badge{ padding:6px 10px; border-radius:999px; background: rgba(14,165,233,.12); border:1px solid rgba(14,165,233,.35); font-size:13px; }
-    .cta{ margin-top: 16px; display:flex; flex-wrap:wrap; gap:10px; }
-    .btn{ display:inline-block; padding:10px 14px; border-radius:12px; font-weight:700; border:1px solid transparent; background:var(--brand); color:white }
-    .btn.secondary{ background:transparent; color:var(--text); border-color:#2a3340 }
-    .grid{ display:grid; gap:16px; grid-template-columns: 1fr; }
-    section{ margin: 26px 0; }
-    .section-title{ font-size:20px; margin: 0 0 8px 0 }
-    .item{ padding:18px; border:1px solid #202632; border-radius:14px; background: linear-gradient(180deg, rgba(255,255,255,.02), transparent); }
-    .item h3{ margin:0 0 6px 0; font-size:17px }
-    .item p{ margin:0; color:var(--muted) }
-    .footer{ color:var(--muted); font-size:14px; text-align:center; padding:24px 0 }
-    @media (min-width: 860px){
-      .hero{ grid-template-columns: 1.2fr .8fr; }
-      .grid{ grid-template-columns: repeat(3, 1fr); }
-    }
-    .avatar{ width:120px; height:120px; border-radius:50%; background: linear-gradient(180deg, #263041, #1b222e); border:2px solid #2a3340; box-shadow:var(--shadow); display:flex; align-items:center; justify-content:center; font-weight:800 }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">Paulo Laba</div>
-      <nav aria-label="Seções">
-        <a href="#sobre">Sobre</a>
-        <a href="#pesquisa">Pesquisa</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+      <div class="brand">Welcome (:</div>
+      <nav aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
       <div class="card hero">
         <div>
-          <h1>Engenheiro Ambiental & Pesquisador</h1>
-          <p class="lead">Micrometeorologia e turbulência na Amazônia (ATTO). Interesse em HPC, paralelização (CPU/GPU) e linguagens como Chapel e Python.</p>
-          <div class="badges" aria-label="Áreas e interesses">
-            <span class="badge">Micrometeorologia</span>
-            <span class="badge">Turbulência</span>
+          <h1>Paulo H. Laba</h1>
+          <p class="lead">Environmental Engineer</p> 
+          <div class="badges" aria-label="Fields and interests">
+            <span class="badge">Micrometeorology</span>
+            <span class="badge">Turbulence</span>
             <span class="badge">Chapel</span>
-            <span class="badge">GPU</span>
-            <span class="badge">ATTO</span>
+            <span class="badge">C++</span>
+            <span class="badge">Python</span>
           </div>
-          <div class="cta" role="group" aria-label="Ações">
-            <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn secondary" href="#contato">Fale comigo</a>
+          <div class="cta" role="group" aria-label="Actions">
+            <!-- Professional links -->
+            <a class="btn secondary" href="https://www.linkedin.com/in/paulo-laba/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn secondary" href="https://orcid.org/0009-0003-3208-363X" target="_blank" rel="noopener">ORCID</a>
+            <a class="btn secondary" href="http://lattes.cnpq.br/9094771020875610" target="_blank" rel="noopener">Lattes</a>
+
+            <!-- Contact me -->
+            <!-- <a class="btn secondary" href="#contact">Contact me</a> -->
           </div>
         </div>
         <div style="display:flex; justify-content:center;">
-          <div class="avatar" aria-hidden="true">PL</div>
+          <img src="avatar.png" alt="Paulo Laba" class="avatar">
         </div>
       </div>
 
-      <section id="sobre">
-        <h2 class="section-title">Sobre</h2>
+      <section id="about">
+        <h2 class="section-title">About</h2>
         <div class="item">
-          <p>Sou Engenheiro Ambiental formado pela UFPR. Atualmente pesquiso interações atmosfera-floresta e dinâmica da turbulência, com foco na subcamada de rugosidade. Também desenvolvo ferramentas para processamento de dados e análise espectral.</p>
+          <p style="text-align: justify;">
+            I am an environmental engineer graduated from UFPR and currently pursuing a master’s degree in Environmental Engineering at UFPR, specializing in micrometeorology under the supervision of <a href="https://nldias.github.io/" target="_blank">Prof. Nelson Luís Dias</a>. My research focuses on atmosphere–forest interactions and turbulence dynamics, with emphasis on the roughness sublayer. In addition, I am interested in parallel programming (CPU/GPU), numerical methods, computational fluid dynamics (CFD), and coastal engineering.</p>
         </div>
       </section>
 
-      <section id="pesquisa">
-        <h2 class="section-title">Pesquisa & Publicações</h2>
+      <section id="education">
+        <h2 class="section-title">Education</h2>
         <div class="grid">
           <div class="item">
-            <h3>Energia Cinética Turbulenta no sítio ATTO</h3>
-            <p>Estudo dos termos de produção, transporte e dissipação no dossel amazônico. <em>(link para pré-print/doi)</em></p>
+            <h3>B.Sc. in Environmental Engineering</h3>
+            <p><strong>Institution:</strong> Federal University of Paraná (UFPR)</p>
+            <p><strong>Graduation year:</strong> 2022</p>
+            <p><strong>Advisor:</strong> Prof. Cynara L. N. Cunha</p>
+            <p><strong> Thesis:</strong> 
+              <a href="https://acervodigital.ufpr.br/xmlui/bitstream/handle/1884/82702/R%20%20G%20-%20PAULO%20HENRIQUE%20LABA.pdf?sequence=1&isAllowed=y" target="_blank" rel="noopener">
+                Análise dos Processos Erosivos na Praia Central de Matinhos-PR Utilizando o SMC-Brasil
+              </a>
           </div>
+
           <div class="item">
-            <h3>Espectros e path-averaging</h3>
-            <p>Avaliação de correções H₁(k₁p, θ) usando dados observacionais multi-altura. <em>(em preparação)</em></p>
-          </div>
-          <div class="item">
-            <h3>Modelagem 1D multilayer de temperatura no dossel</h3>
-            <p>Proposta e implementação numérica com LAD = 5.29 m²/m². <em>(rascunho)</em></p>
+            <h3>M.Sc. in Environmental Engineering</h3>
+            <p><strong>Institution:</strong> Federal University of Paraná (UFPR)</p>
+            <p><strong>Expected completion:</strong> 2025</p>
+            <p><strong>Advisor:</strong> Prof. Nelson Luís Dias</p>
+            <p><strong>Master's Thesis:</strong> O Efeito da Topografia no Balanço da Energia Cinética da Turbulência na Floresta Amazônica</p>
           </div>
         </div>
       </section>
 
-      <section id="projetos">
-        <h2 class="section-title">Projetos</h2>
-        <div class="grid">
-          <div class="item">
-            <h3>tke_terms</h3>
-            <p>Cálculo de termos da TKE com dados em múltiplas alturas (35, 50, 81 m) e parametrizações de Monin-Obukhov.</p>
+      <section id="research">
+        <h2 class="section-title">Research & Publications</h2>
+        <!-- Journal publications -->
+        <details>
+          <summary><strong>Journal Publications</strong></summary>
+          <div class="pub-grid" style="margin-top:12px; margin-bottom:12px;">
+            <div class="item">
+              <h3>Topography-Induced TKE Budget Behavior Over an Amazon Forest</h3>
+              <p><strong>Authors:</strong> Laba, P.H.; Dias, N.L.; Chamecki, M.; Dias-Júnior, C.Q.; Torkelson, G.</p>
+              <p><strong>Year:</strong> 2025 · <strong>Language:</strong> English-US</p>
+              <p><strong>Journal:</strong> Boundary-Layer Meteorology</p>
+              <p><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10546-025-00932-x" target="_blank">10.1007/s10546-025-00932-x</a></p>
+            </div>
+            <div class="item">
+              <h3>Uma análise da ECT para a subcamada de rugosidade da Floresta Amazônica sob condições atmosféricas instáveis</h3>
+              <p><strong>Authors:</strong> Laba, P. H.; Dias, N.L.; Dias-Júnior, C. Q.</p>
+              <p><strong>Year:</strong> 2024 · <strong>Language:</strong> Portuguese-BR</p>
+              <p><strong>Journal:</strong> Ciência e Natura</p>
+              <p><strong>DOI:</strong> <a href="https://doi.org/10.5902/2179460X87711" target="_blank">10.5902/2179460X87711</a></p>
+            </div>
           </div>
-          <div class="item">
-            <h3>Processamento Chapel</h3>
-            <p>Pipeline em Chapel para estatística e análise espectral de grandes volumes de dados.</p>
+        </details>
+
+        <!-- Conference publications -->        
+        <details>
+          <summary><strong>Conference Publications</strong></summary>
+          <div class="grid" style="margin-top:12px; margin-bottom:12px;">
+            <div class="item">
+              <h3>Topography Induces Changes in Turbulence and Transport at the ATTO Site</h3>
+              <p><strong>Authors:</strong> Laba, P. H.; Dias, N. L.; Chamecki, M.; Dias Junior, C. Q.</p>
+              <p><strong>Language:</strong> English-US</p>
+              <p><strong>Event:</strong> ATTO Workshop, 2024, Manaus-AM</p>
+            </div>
+
+            <div class="item">
+              <h3>Evaluation of the Turbulence in the Amazon Roughness Sublayer</h3>
+              <p><strong>Authors:</strong> Laba, P. H.; Dias, N. L.; Dias Junior, C. Q.</p>
+              <p><strong>Language:</strong> English-US</p>
+              <p><strong>Event:</strong> XIII Workshop Brasileiro de Micrometeorologia, 2023, Alegrete-RS</p>
+            </div>
+
+            <div class="item">
+              <h3>Investigação da Circulação Litorânea na Costa Paranaense Utilizando o SMC-Brasil</h3>
+              <p><strong>Authors:</strong> Laba, P. H.; Cunha, C. L. N.</p>
+              <p><strong>Language:</strong> Portuguese-BR</p>
+              <p><strong>Event:</strong> XI Simpósio Brasileiro de Engenharia Ambiental e Sanitária, 2022</p>
+            </div>
+
+            <div class="item">
+              <h3>Avaliação do Clima de Onda para o Litoral do Paraná</h3>
+              <p><strong>Authors:</strong> Laba, P. H.; Cunha, C. L. N.</p>
+              <p><strong>Language:</strong> Portuguese-BR</p>
+              <p><strong>Event:</strong> 31º Congresso da ABES, 2021, Curitiba-PR </p>
+            </div>
+
+            <div class="item">
+              <h3>Estudo da Circulação Hidrodinâmica do Complexo Estuarino Lagunar Mundaú/Manguaba</h3>
+              <p><strong>Authors:</strong> Oliveira, D.; Cunha, C. L. N.; Laba, P. H.</p>
+              <p><strong>Language:</strong> Portuguese-BR</p>
+              <p><strong>Event:</strong> XXIII Simpósio Brasileiro de Recursos Hídricos, 2019, Foz do Iguaçu</p>
+            </div>
           </div>
+        </details>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Ongoing Projects</h2>
+        <div class="pub-grid">
           <div class="item">
-            <h3>Workflow ambiental</h3>
-            <p>Ferramenta para gestão de resíduos e emissão de MTR/PGRCC em obras.</p>
+            <h3>Effect of Topography and Vegetation on the Roughness Sublayer (RSL)</h3>
+            <p style="text-align: justify;"> Investigation of turbulence dynamics in the Amazon forest at the ATTO site. This project involves analyzing multi-height observational data (35, 50, 81 m) to understand atmosphere–forest interactions and roughness sublayer turbulence.</p>
           </div>
         </div>
       </section>
 
-      <section id="contato">
-        <h2 class="section-title">Contato</h2>
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
         <div class="item">
-          <p>Email: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a> · LinkedIn: <a href="#" rel="me">linkedin.com/in/seu-usuario</a></p>
+          <p>Main email: <a href="mailto:paulo.laba.92@gmail.com">paulo.laba.92@gmail.com</a> · Institutional email: <a href="mailto:laba@ufpr.br">laba@ufpr.br</a> </p>
         </div>
       </section>
 
-      <div class="footer">© <span id="y"></span> Paulo Laba. Feito com HTML/CSS e hospedado no GitHub Pages.</div>
+      <div class="footer">© <span id="y"></span> Paulo Laba. Built with HTML/CSS and hosted on GitHub Pages.</div>
     </main>
   </div>
   <script>
@@ -158,4 +175,3 @@
   </script>
 </body>
 </html>
-
