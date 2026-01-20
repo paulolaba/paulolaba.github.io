@@ -1,37 +1,58 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/png" href="pl-icon.png">
   <link rel="icon" type="image/png" href="pl-icon.png">
   <title>Laba, P.H.</title>
-  <meta name="description" content="Homepage of Paulo Laba — Environmental Engineer (UFPR). Research in micrometeorology and turbulence in the Amazon; interest in HPC, Chapel, and Python." />
+  <meta name="description"
+    content="Homepage of Paulo Laba — Environmental Engineer (UFPR). Research in micrometeorology and turbulence in the Amazon; interest in HPC, Chapel, and Python." />
   <meta property="og:title" content="Paulo Laba — Homepage" />
   <meta property="og:description" content="Research in micrometeorology and turbulence; HPC; Chapel & Python." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://seu-usuario.github.io" />
   <meta name="theme-color" content="#0ea5e9" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else if (saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
+
 <body>
   <div class="wrap">
     <header>
       <div class="brand">Welcome (:</div>
-      <nav aria-label="Sections">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#tools">Tools</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <nav aria-label="Sections">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#tools">Tools</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="theme-toggle" class="btn secondary" aria-label="Toggle theme" style="padding: 6px 10px;">
+          <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main>
       <div class="card hero">
         <div>
           <h1>Paulo Henrique Laba</h1>
-          <p class="lead">Environmental Engineer</p> 
+          <p class="lead">Environmental Engineer</p>
           <div class="badges" aria-label="Fields and interests">
             <span class="badge">Micrometeorology</span>
             <span class="badge">Turbulence</span>
@@ -40,9 +61,12 @@
           </div>
           <div class="cta" role="group" aria-label="Actions">
             <!-- Professional links -->
-            <a class="btn secondary" href="https://www.linkedin.com/in/paulo-laba/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn secondary" href="https://orcid.org/0009-0003-3208-363X" target="_blank" rel="noopener">ORCID</a>
-            <a class="btn secondary" href="http://lattes.cnpq.br/9094771020875610" target="_blank" rel="noopener">Lattes</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/paulo-laba/" target="_blank"
+              rel="noopener">LinkedIn</a>
+            <a class="btn secondary" href="https://orcid.org/0009-0003-3208-363X" target="_blank"
+              rel="noopener">ORCID</a>
+            <a class="btn secondary" href="http://lattes.cnpq.br/9094771020875610" target="_blank"
+              rel="noopener">Lattes</a>
 
             <!-- Contact me -->
             <!-- <a class="btn secondary" href="#contact">Contact me</a> -->
@@ -56,11 +80,15 @@
       <section id="about">
         <h2 class="section-title">About</h2>
         <div class="item">
-         <p style="text-align: justify;">
-          I am currently engaged in doctoral-level research in Environmental Engineering at Federal University of Paraná (UFPR), with a focus on micrometeorology and atmospheric turbulence, under the supervision of
-          <a href="https://nldias.github.io/" target="_blank">Prof. Nelson Luís Dias</a>.
-          My research addresses atmosphere-forest interactions, turbulence dynamics, statistical analysis, and large-scale data processing.
-          In addition, I am an enthusiast in scientific programming, mainly using <strong>Chapel</strong> and <strong>Python</strong>, with interests in parallel programming (CPU/GPU), numerical methods, computational fluid dynamics (CFD), machine learning, and coastal modeling (particularly related to wave dynamics).
+          <p style="text-align: justify;">
+            I am currently engaged in doctoral-level research in Environmental Engineering at Federal University of
+            Paraná (UFPR), with a focus on micrometeorology and atmospheric turbulence, under the supervision of
+            <a href="https://nldias.github.io/" target="_blank">Prof. Nelson Luís Dias</a>.
+            My research addresses atmosphere-forest interactions, turbulence dynamics, statistical analysis, and
+            large-scale data processing.
+            In addition, I am an enthusiast in scientific programming, mainly using <strong>Chapel</strong> and
+            <strong>Python</strong>, with interests in parallel programming (CPU/GPU), numerical methods, computational
+            fluid dynamics (CFD), machine learning, and coastal modeling (particularly related to wave dynamics).
           </p>
         </div>
       </section>
@@ -73,8 +101,9 @@
             <p><strong>Institution:</strong> Federal University of Paraná (UFPR)</p>
             <p><strong>Year of completion:</strong> 2022</p>
             <p><strong>Advisor:</strong> Prof. Cynara L. N. Cunha</p>
-            <p><strong> Thesis:</strong> 
-              <a href="https://acervodigital.ufpr.br/xmlui/bitstream/handle/1884/82702/R%20%20G%20-%20PAULO%20HENRIQUE%20LABA.pdf?sequence=1&isAllowed=y" target="_blank" rel="noopener">
+            <p><strong> Thesis:</strong>
+              <a href="https://acervodigital.ufpr.br/xmlui/bitstream/handle/1884/82702/R%20%20G%20-%20PAULO%20HENRIQUE%20LABA.pdf?sequence=1&isAllowed=y"
+                target="_blank" rel="noopener">
                 Análise dos Processos Erosivos na Praia Central de Matinhos-PR Utilizando o SMC-Brasil
               </a>
           </div>
@@ -84,7 +113,11 @@
             <p><strong>Institution:</strong> Federal University of Paraná (UFPR)</p>
             <p><strong>Year of completion:</strong> 2025</p>
             <p><strong>Advisor:</strong> Prof. Nelson Luís Dias</p>
-            <p><strong>Master's Thesis:</strong> O Efeito da Topografia no Balanço da Energia Cinética da Turbulência na Floresta Amazônica</p>
+            <p><strong>Master's Thesis:</strong>
+              <a href="https://acervodigital.ufpr.br/handle/1884/100200" target="_blank" rel="noopener">
+                O Efeito da Topografia no Balanço da Energia Cinética da Turbulência na Floresta Amazônica
+              </a>
+            </p>
           </div>
         </div>
       </section>
@@ -100,24 +133,28 @@
               <p><strong>Authors:</strong> Laba, P.H.; Dias, N.L.; Chamecki, M.; Dias-Júnior, C.Q.; Torkelson, G.</p>
               <p><strong>Year:</strong> 2025 · <strong>Language:</strong> English-US</p>
               <p><strong>Journal:</strong> Boundary-Layer Meteorology</p>
-              <p><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10546-025-00932-x" target="_blank">10.1007/s10546-025-00932-x</a></p>
+              <p><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10546-025-00932-x"
+                  target="_blank">10.1007/s10546-025-00932-x</a></p>
             </div>
             <div class="item">
-              <h3>Uma análise da ECT para a subcamada de rugosidade da Floresta Amazônica sob condições atmosféricas instáveis</h3>
+              <h3>Uma análise da ECT para a subcamada de rugosidade da Floresta Amazônica sob condições atmosféricas
+                instáveis</h3>
               <p><strong>Authors:</strong> Laba, P. H.; Dias, N.L.; Dias-Júnior, C. Q.</p>
               <p><strong>Year:</strong> 2024 · <strong>Language:</strong> Portuguese-BR</p>
               <p><strong>Journal:</strong> Ciência e Natura</p>
-              <p><strong>DOI:</strong> <a href="https://doi.org/10.5902/2179460X87711" target="_blank">10.5902/2179460X87711</a></p>
+              <p><strong>DOI:</strong> <a href="https://doi.org/10.5902/2179460X87711"
+                  target="_blank">10.5902/2179460X87711</a></p>
             </div>
           </div>
         </details>
 
-        <!-- Conference publications -->        
+        <!-- Conference publications -->
         <details>
           <summary><strong>Conference Publications</strong></summary>
           <div class="grid" style="margin-top:12px; margin-bottom:12px;">
             <div class="item">
-              <h3>Multilevel Assessment and Correction of Path-Averaging Biases in Velocity Spectra for TKE Dissipation in the Amazon Roughness Sublayer</h3>
+              <h3>Multilevel Assessment and Correction of Path-Averaging Biases in Velocity Spectra for TKE Dissipation
+                in the Amazon Roughness Sublayer</h3>
               <p><strong>Authors:</strong> Laba, P. H.; Dias, N. L.</p>
               <p><strong>Language:</strong> English-US</p>
               <p><strong>Event:</strong> XIV Workshop Brasileiro de Micrometeorologia, 2025, Maceió-AL</p>
@@ -172,20 +209,27 @@
         <h2 class="section-title">Ongoing Projects</h2>
         <div class="pub-grid" style="margin-top:12px; margin-bottom:12px;">
           <div class="item">
-            <h3>A Spectral Formulation Based on the Geometric Mean: Development and Application to Turbulent Flow Analysis</h3>
+            <h3>A Spectral Formulation Based on the Geometric Mean: Development and Application to Turbulent Flow
+              Analysis</h3>
             <p style="text-align: justify;">
-              This research develops a spectral formulation based on the geometric mean, generalized using a logarithmic-modulus approach.
-              The main objective is to address sign alternation issues commonly observed in co-spectra, particularly at high frequencies, while preserving physical interpretability.
-              The formulation is applied to atmospheric turbulence data, with emphasis on improving the robustness of spectral analysis under observational constraints.
+              This research develops a spectral formulation based on the geometric mean, generalized using a
+              logarithmic-modulus approach.
+              The main objective is to address sign alternation issues commonly observed in co-spectra, particularly at
+              high frequencies, while preserving physical interpretability.
+              The formulation is applied to atmospheric turbulence data, with emphasis on improving the robustness of
+              spectral analysis under observational constraints.
             </p>
           </div>
 
           <div class="item">
-            <h3>The Influence of Topography and Vegetation on Turbulence in the Amazon Forest Roughness 
-            Sublayer</h3>
+            <h3>The Influence of Topography and Vegetation on Turbulence in the Amazon Forest Roughness
+              Sublayer</h3>
             <p style="text-align: justify;">
-              Investigation of turbulence dynamics in the Amazon forest at the ATTO site, with emphasis on the effects of topography and vegetation within the roughness sublayer.
-              This research is based on the analysis of multi-height observational data (35, 50, 81 m) and focuses on the turbulent kinetic energy (TKE) budget and the temperature variance budget to better characterize atmosphere-forest interactions.
+              Investigation of turbulence dynamics in the Amazon forest at the ATTO site, with emphasis on the effects
+              of topography and vegetation within the roughness sublayer.
+              This research is based on the analysis of multi-height observational data (35, 50, 81 m) and focuses on
+              the turbulent kinetic energy (TKE) budget and the temperature variance budget to better characterize
+              atmosphere-forest interactions.
             </p>
           </div>
         </div>
@@ -196,28 +240,31 @@
         <div class="grid">
           <div class="item">
             <h3>Chapel Syntax Highlighting for Sublime Text</h3>
-              <p style="text-align: justify;">
-                A Sublime Text package that provides syntax highlighting for the Chapel programming language, 
-                making code more readable and easier to navigate.
-              </p>
-            <p><a href="https://github.com/paulolaba/chapel-syntax-sublime" target="_blank" rel="noopener">Available Here (GitHub) →</a></p>
+            <p style="text-align: justify;">
+              A Sublime Text package that provides syntax highlighting for the Chapel programming language,
+              making code more readable and easier to navigate.
+            </p>
+            <p><a href="https://github.com/paulolaba/chapel-syntax-sublime" target="_blank" rel="noopener">Available
+                Here (GitHub) →</a></p>
           </div>
 
           <div class="item">
             <h3>LaTeX Changes Cleaner</h3>
             <p style="text-align: justify;">
-              A Python tool that processes LaTeX documents using the <code>changes</code> package, 
-              automatically generating the final clean version of the file (without markup), 
+              A Python tool that processes LaTeX documents using the <code>changes</code> package,
+              automatically generating the final clean version of the file (without markup),
               ready for submission to journals.
             </p>
-            <p><a href="https://github.com/paulolaba/latex-changes-cleaner" target="_blank" rel="noopener">Available here (GitHub) →</a></p>
+            <p><a href="https://github.com/paulolaba/latex-changes-cleaner" target="_blank" rel="noopener">Available
+                here (GitHub) →</a></p>
           </div>
       </section>
 
       <section id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="item">
-          <p>Main email: <a href="mailto:paulo.laba.92@gmail.com">paulo.laba.92@gmail.com</a> · Institutional email: <a href="mailto:laba@ufpr.br">laba@ufpr.br</a> </p>
+          <p>Main email: <a href="mailto:paulo.laba.92@gmail.com">paulo.laba.92@gmail.com</a> · Institutional email: <a
+              href="mailto:laba@ufpr.br">laba@ufpr.br</a> </p>
         </div>
       </section>
 
@@ -226,6 +273,45 @@
   </div>
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    const toggleBtn = document.getElementById('theme-toggle');
+    const icon = document.getElementById('theme-icon');
+
+    // Icons
+    const moonIcon = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+    const sunIcon = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
+    const autoIcon = '<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>';
+
+    function updateIcon() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        icon.innerHTML = sunIcon;
+        toggleBtn.setAttribute('title', 'Current theme: Light');
+      } else if (saved === 'dark') {
+        icon.innerHTML = moonIcon;
+        toggleBtn.setAttribute('title', 'Current theme: Dark');
+      } else {
+        icon.innerHTML = autoIcon;
+        toggleBtn.setAttribute('title', 'Current theme: Auto');
+      }
+    }
+    updateIcon();
+
+    toggleBtn.addEventListener('click', () => {
+      const current = localStorage.getItem('theme');
+      if (!current) { // Auto -> Dark
+        localStorage.setItem('theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else if (current === 'dark') { // Dark -> Light
+        localStorage.setItem('theme', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else { // Light -> Auto
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      }
+      updateIcon();
+    });
   </script>
 </body>
+
 </html>
