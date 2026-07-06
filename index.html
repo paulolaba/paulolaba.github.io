@@ -85,12 +85,13 @@
         <h2 class="section-title">About</h2>
         <div class="item">
           <p style="text-align: justify;">
-            I am a PhD researcher in Environmental Engineering at UFPR, advised by <a href="https://nldias.github.io/"
+            I am a PhD student in Environmental Engineering at UFPR, advised by <a href="https://nldias.github.io/"
               target="_blank">Prof. Nelson Luís Dias</a>, specializing in micrometeorology and atmospheric turbulence.
             My work bridges experimental and numerical domains: I study atmosphere-forest interactions, develop novel
-            spectral analysis methods, and develop Computational Fluid Dynamics (CFD) solvers. To drive these models, I
+            spectral analysis methods, and write custom Computational Fluid Dynamics (CFD) solvers. To drive these
+            models, I
             focus on high-performance scientific programming using Chapel and Python for numerical methods and CPU/GPU
-            parallel computing. Additionally, I maintain a strong interest in coastal wave modeling.
+            parallel computing. Additionally, my background includes previous experience in coastal wave modeling.
           </p>
         </div>
       </section>
@@ -222,30 +223,57 @@
       <section id="projects">
         <h2 class="section-title">Ongoing Projects</h2>
         <div class="pub-grid" style="margin-top:12px; margin-bottom:12px;">
+
+          <!-- Projeto 1: Formulação Espectral -->
           <div class="item">
             <h3>A Spectral Formulation Based on the Geometric Mean: Development and Application to Turbulent Flow
               Analysis</h3>
             <p style="text-align: justify;">
-              This research develops a spectral formulation based on the geometric mean, generalized using a
-              logarithmic-modulus approach.
-              The main objective is to address sign alternation issues commonly observed in co-spectra, particularly at
-              high frequencies, while preserving physical interpretability.
-              The formulation is applied to atmospheric turbulence data, with emphasis on improving the robustness of
-              spectral analysis under observational constraints.
+              This research introduces a novel spectral formulation utilizing the geometric mean, generalized through a
+              logarithmic-modulus approach. The primary goal is to resolve the sign alternation issues frequently
+              encountered in co-spectra—especially at high frequencies—without sacrificing physical interpretability.
+              By applying this methodology to atmospheric turbulence data, this project aims to significantly enhance
+              the robustness and reliability of spectral analysis under real-world observational constraints.
             </p>
           </div>
 
+          <!-- Projeto 2: Dinâmica na ATTO (Amazônia) -->
           <div class="item">
-            <h3>The Influence of Topography and Vegetation on Turbulence in the Amazon Forest Roughness
-              Sublayer</h3>
+            <h3>The Influence of Topography and Vegetation on Turbulence in the Amazon Forest Roughness Sublayer</h3>
             <p style="text-align: justify;">
-              Investigation of turbulence dynamics in the Amazon forest at the ATTO site, with emphasis on the effects
-              of topography and vegetation within the roughness sublayer.
-              This research is based on the analysis of multi-height observational data (35, 50, 81 m) and focuses on
-              the turbulent kinetic energy (TKE) budget and the temperature variance budget to better characterize
-              atmosphere-forest interactions.
+              This project investigates the complex dynamics of turbulence within the Amazon rainforest canopy at the
+              Amazon Tall Tower Observatory (ATTO). Focusing on the roughness sublayer, we explore how local topography
+              and dense vegetation modulate airflow. Using multi-height micrometeorological data (35m, 50m, and 81m),
+              the research analyzes the turbulent kinetic energy (TKE) and temperature variance budgets to provide a
+              more accurate characterization of atmosphere-forest interactions.
             </p>
           </div>
+
+          <!-- Projeto 3: Calibração In-Situ -->
+          <div class="item">
+            <h3>In-Situ Calibration of Sonic Anemometer Temperature Bias Using the Temperature Variance Budget</h3>
+            <p style="text-align: justify;">
+              This project develops an innovative analytical method to correct temperature biases in sonic anemometers
+              using the atmospheric temperature variance budget. By transforming an ill-conditioned optimization problem
+              into an exact linear system, this approach mathematically preserves the physical integrity of the
+              turbulent temperature gradient. The methodology provides a robust QA/QC tool for correcting multi-level
+              micrometeorological data, even in the absence of absolute temperature references.
+            </p>
+          </div>
+
+          <!-- Projeto 4: DNS Chapel -->
+          <div class="item">
+            <h3>High-Performance Direct Numerical Simulation (DNS) of Scalar Transport in Rayleigh-Bénard Convection
+            </h3>
+            <p style="text-align: justify;">
+              This project involves the development of a highly optimized 2D Direct Numerical Simulation (DNS) solver
+              written in the Chapel programming language, designed to investigate passive and active scalar transport in
+              Rayleigh-Bénard Convection. By employing advanced numerical schemes—including a TVD Superbee limiter and
+              a Multigrid V-Cycle Poisson solver—the code accurately resolves scalar micro-filaments with extreme
+              Schmidt numbers (up to Sc=100) without artificial diffusion.
+            </p>
+          </div>
+
         </div>
       </section>
 
